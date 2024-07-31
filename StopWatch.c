@@ -4,32 +4,24 @@
 
 int main(){
     int h = 0 , m = 0 , s =0;
-    for(int i = 0 ; i<=12 ; i++)
-    {
-        for(int j = 0 ;j<=60 ; j++)
-        {   
-            for(int k =1; k<=60 ; k++)
-            {    
-                  sleep(1);
-                printf("%.2d : %.2d : %.2d\n", h , m , s);
-                if(k<60)
-                {
-                    s = s+1;
-                }
-                if(k==60)
-                {
-                    s=0;
-                    m = m+1;
-                }
-                if(m==59)
-                {
-                    m=0;
-                    h = h+1;
-                }
-               
-            }
+     while(1)
+     {   
+        system("cls");
+        printf("%.2d : %.2d : %.2d",h ,m , s);
+        sleep(1);
+        s++;
+       
+        if(s==60)
+        {
+            s = 0;
+            m++;
         }
-    }
+        if(m==60)
+        {
+            m=0;
+            h++;
+        }
 
+     }
     return 0;
 }
