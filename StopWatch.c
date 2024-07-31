@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<time.h>
+#include<unistd.h>
 
 int main(){
     int h = 0 , m = 0 , s =0;
@@ -7,8 +9,9 @@ int main(){
         for(int j = 0 ;j<=60 ; j++)
         {   
             for(int k =1; k<=60 ; k++)
-            {     system("cls");
-                printf("%d : %d : %d\n", h , m , s);
+            {    
+                  sleep(1);
+                printf("%.2d : %.2d : %.2d\n", h , m , s);
                 if(k<60)
                 {
                     s = s+1;
