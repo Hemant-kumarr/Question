@@ -7,14 +7,14 @@ void display()
     float m = a*100/(a+b);
     float  n = b*100/(a+b);
     printf("------Result------\n");
-    printf("1. Aish  %.2f per.(%d)\n",m,a);
-    printf("1. Bhavika  %.2f per.(%d)", n,b);
+    printf("1. CODING  %.2f per.(%d)\n",m,a);
+    printf("1. TRAVELING  %.2f per.(%d)", n,b);
 }
 int main(){
     int ch=0;
     while(ch!=3)
-    {   printf("-----WHO IS BEST SISTER PLEASE VOTE HARE-----\n");
-        printf("1. Aish\n2. Bhavika\n3. view reuslt\n");
+    {   printf("-----WHAT YOU LIKE MOST-----\n");
+        printf("1. CODING\n2. TRAVELING\n3. view reuslt\n");
         scanf("%d",&ch);
         if(ch==1)  a++;
         if(ch==2)  b++;
